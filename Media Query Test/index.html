@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html">
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Michael Montgomery | Front-end Web Developer</title>
+    <link rel="stylesheet" type="text/css" href="Stylesheets/style.css">
+    <script type="text/javascript" src="Scripts/script.js"></script>
+    <!--Josefin font for h1-->
+    <link href='http://fonts.googleapis.com/css?family=Josefin+Sans:100' rel='stylesheet' type='text/css'>
+</head>
+<body>
+<!--Top of page-->
+<div id="container">
+    <div id="header">
+        <h1 id="top-name" onclick="goHome()" ondblclick="midnight()">Michael Montgomery<span id="divider"> | </span> <span id="active-tab" >Design</span></h1>
+    </div>
+    <div id="rectangle-wrapper">
+        <ul id="rectangle-list">
+            <li class="rectangle-row"><div id="rectangle-one" class="rectangle" onclick="goAbout()">
+                <p id="label-one" class="label">About</p>
+
+            </div> </li>
+       <li class="rectangle-row"> <div id="rectangle-two" class="rectangle">
+           <p id="label-two" class="label">Design</p>
+
+        </div></li>
+        <li class="rectangle-row"> <div id="rectangle-three" class="rectangle"onclick="goPortfolio()">
+            <p id="label-three" class="label">Portfolio</p>
+
+        </div></li>
+        <li class="rectangle-row"> <div id="rectangle-four" class="rectangle">
+            <p id="label-four" class="label">Technology</p>
+
+        </div></li>
+        <li class="rectangle-row"><div id="rectangle-five" class="rectangle" onclick="showContact()">
+            <p id="label-five" class="label">Contact</p>
+
+        </div></li>
+            </ul>
+        <ul id="footer-link-list">
+            <li id="footer-link-one" class="footer-link">Orlando</li>
+            <li id="footer-link-two" class="footer-link">New York</li>
+            <li id="footer-link-three" class="footer-link">Los Angeles</li>
+        </ul>
+
+    </div>
+    <div id="contact-wrapper">
+        <form id="contact-form">
+            <input type="text" id="first-name-query" class="single-wide" placeholder="First Name">
+            <input type="text" id="last-name-query" class="single-wide" placeholder="Last Name"><br>
+            <input type="text" id="company-query"class="double-wide" placeholder="Company/Brand Name (Optional)"><br>
+            <input type="tel" id="phone-query" class="single-wide" placeholder="Phone Number">
+            <input type="email" id="email-query" class="single-wide" placeholder="Email Address"><br>
+            <textarea placeholder="Tell me more about your project. If applicable please provide a link to your existing page."></textarea><br>
+            <input type="button" id="contact-form-button" value="Send">
+        </form>
+
+    </div>
+    <div id="about-wrapper">
+
+        <p id="about-text">You never get a second chance to make a first impression. As a front-end web developer, I
+        specialize in ensuring that the first, and likely primary, line of contact for your brand is designed beautifully,
+         works flawlessly and creates an engaging and inviting experience for your clients. Click 'Get Started' and let's
+        build your next big thing together.</p>
+        <input type="button" id="get-started" value="Get Started" onclick="goPortfolio()">
+    </div>
+    <div id="portfolio-wrapper">
+        <p id="portfolio-text">I am currently finishing up my degree at Full Sail University and am currently not
+        taking projects. Enter your email address below and you'll be the first to know when I am taking projects. Thank
+        you.</p>
+        <form id="email-signup-form"> <input type="email" id="email-signup" placeholder="Email Address">
+        <input type="button" id="email-signup-button" value="Sign Up">
+            </form>
+    </div>
+</div>
+</body>
+</html>

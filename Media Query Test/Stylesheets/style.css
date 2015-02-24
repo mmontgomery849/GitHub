@@ -1,0 +1,359 @@
+
+
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+#header {
+    background-color: black;
+    width: 100vw;
+    height: 4vh;
+    display: table;
+}
+
+h1 {
+    font-family: 'Josefin Sans', sans-serif;
+    float: left;
+    color: white;
+    display: table-cell;
+    vertical-align: middle;
+    font-size: 3em;
+    margin-left: 1%;
+}
+
+h1:hover {
+    cursor: default;
+}
+
+#nav-links {
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.go-nav {
+    display: inline;
+    font-family: 'Comfortaa', cursive;
+    vertical-align: middle;
+    padding-right: 2%;
+    padding-left: 2%;
+    font-size: 1.3em;
+    font-weight: lighter;
+}
+
+.go-nav:hover {
+    border-bottom: 1px solid red;
+    cursor: default;
+}
+
+#nav-wrapper {
+    width: 100vw;
+    height: 5vh;
+    border-bottom: 1px solid;
+    display: table;
+    display: none;
+
+}
+
+.divider {
+    display: table-cell;
+    vertical-align: middle;
+    display: inline;
+    font-size: 1.7em;
+    font-weight: 100;
+}
+
+.flip-square {
+    width: 25vw;
+    height: 15vh;
+    background-color: black;
+    float: left;
+
+}
+
+#rectangle-wrapper {
+    background-color: black;
+    height: 90vh;
+    width: 100vw;
+    text-align: center;
+}
+
+.rectangle {
+    padding: 0;
+    margin:0;
+    float: left;
+    height: 80vh;
+    width: 19vw;
+    background-color: white;
+    text-align: center;
+}
+
+.rectangle-row{
+    display: inline-block;
+    text-align: center;
+    padding-left: 2px;
+    padding-right: 2px;
+    -webkit-filter: grayscale(100%);
+}
+
+.rectangle-row:hover {
+    position: relative;
+    top: -13px;
+    filter: none;
+    -webkit-filter: grayscale(0%);
+}
+#rectangle-list {
+    padding: 0;
+    margin: 0;
+
+}
+
+
+
+.footer-link {
+    display: inline;
+    color: white;
+    font-family: 'Josefin Sans', sans-serif;
+    margin-left: 1%;
+}
+
+.footer-link:hover {
+    border-bottom: 1px solid red;
+}
+
+#footer-link-list {
+    text-align: center;
+}
+
+
+@-webkit-keyframes fadein{
+    from {opacity: 0}
+    to {opacity: 1}
+}
+
+#rectangle-one {
+    -webkit-animation: fadein 2s;
+    background-image: url("http://i111.photobucket.com/albums/n129/skyhighk9/3131_zps95ff170f_01_zps2e4913c6.gif");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+#rectangle-two {
+    -webkit-animation: fadein 3s;
+    background-image: url("http://i111.photobucket.com/albums/n129/skyhighk9/3131_zps95ff170f_02_zps7206edcc.gif");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+#rectangle-three {
+    -webkit-animation: fadein 5s;
+    background-image: url("http://i111.photobucket.com/albums/n129/skyhighk9/3131_zps95ff170f_03_zpsd968b3fc.gif");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+#rectangle-four {
+    -webkit-animation: fadein 7s;
+    background-image: url("http://i111.photobucket.com/albums/n129/skyhighk9/3131_zps95ff170f_04_zpsccceb9df.gif");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+#rectangle-five {
+    -webkit-animation: fadein 9s;
+    background-image: url("http://i111.photobucket.com/albums/n129/skyhighk9/3131_zps95ff170f_05_zps3a77a3bd.gif");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+
+}
+
+.label {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 2.5em;
+    float: left;
+    padding: 0;
+    margin: 0;
+}
+
+.label:hover {
+    color: red;
+
+}
+
+#contact-wrapper {
+    background-color: black;
+    height: 90vh;
+    width: 100vw;
+    display: table;
+    display: none;
+}
+
+#contact-form {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.single-wide {
+    width: 31vw;
+}
+
+.double-wide {
+    width: 62vw;
+}
+
+#first-name-query, #last-name-query {
+    -webkit-animation: fadein 1s;
+}
+
+#company-query {
+    -webkit-animation: fadein 3s;
+}
+
+#phone-query, #email-query {
+    -webkit-animation: fadein 5s;
+}
+
+input {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 2em;
+    text-align: center;
+    border: none;
+    outline: none;
+    border-bottom: 1px dotted white;
+    background-color: black;
+    color: white;
+}
+input:hover, input:focus {
+    border-bottom: 1px solid white;
+}
+
+textarea {
+    width: 62vw;
+    height: 15vh;
+    border: 1px dotted white;
+    resize: none;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 2em;
+    text-align: center;
+    margin-top: 2%;
+    -webkit-animation: fadein 7s;
+    outline: none;
+}
+
+textarea:hover, textarea:focus {
+    border: 1px solid;
+}
+
+#contact-form-button {
+    border: 1px solid white;
+    margin-top: 2%;
+    visibility: hidden;
+}
+
+#contact-form-button:hover {
+    background-color: white;
+    color: black;
+}
+
+#greeting {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 3em;
+    font-weight: bold;
+    padding-left: 4%;
+    color: white;
+    padding-top: 0;
+    margin-top: 0;
+}
+
+#about-text {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 2em;
+    padding-left: 8%;
+    padding-right: 8%;
+    color: white;
+    display: table-cell;
+    vertical-align: middle;
+    -webkit-animation: fadein 4s;
+}
+
+#about-wrapper {
+    background-color: black;
+    width: 100vw;
+    height: 90vh;
+    display: table;
+    display: none;
+}
+
+#get-started {
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+    position: relative;
+    top: 490px;
+    right: 300px;
+    -webkit-animation: fadein 6s;
+}
+
+#get-started:hover{
+    background-color: white;
+    color: black;
+}
+
+#email-signup {
+    display: inline;
+}
+
+#portfolio-wrapper {
+    width: 100vw;
+    height: 90vh;
+    background-color: black;
+    display: table;
+    display: none;
+}
+
+#portfolio-text {
+    color: white;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 2em;
+    text-align: center;
+    padding-left: 20%;
+    padding-right: 8%;
+    display: table-cell;
+    vertical-align: middle;
+    -webkit-animation: fadein 3s;
+}
+
+#email-signup-form {
+    display: table-cell;
+    vertical-align: bottom;
+    text-align: center;
+    position: relative;
+    right: 45%;
+    bottom: 20%;
+    -webkit-animation: fadein 6s;
+}
+
+#email-signup-button {
+    border: 1px solid white;
+    display: inline;
+    visibility: hidden;
+    margin-top: 2%;
+}
+
+#email-signup-button:hover {
+    color: black;
+    background-color: white;
+}
+
+#active-tab {
+    font-size: .5em;
+    visibility: hidden;
+}
+
+#divider {
+    visibility: hidden;
+}
+
+
